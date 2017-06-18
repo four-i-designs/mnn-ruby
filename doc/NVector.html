@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: NVector
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "NVector";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (N)</a> &raquo;
+    
+    
+    <span class="title">NVector</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: NVector
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Array</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Array</li>
+          
+            <li class="next">NVector</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/vector_math.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Provides basic vector methods</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>size</code> : The number of elements in the vector<br>
+<code>initial_data</code> : (optional; default=null) An array of data with
+which to  initial the vector<br></p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add-instance_method" title="#add (instance method)">#<strong>add</strong>(a_vector)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Add+a+given+vector+to+this+vector+NOTE-3A+if+the+given+vector+is+larger+than+this+one+some+of+it-27s+data+will+be+dropped.">Add a given vector to this vector<br> NOTE: if the given vector is larger than this one some of it&#39;s data will be dropped.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(size, initial_data = nil)  &#x21d2; NVector </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Constructor.">Constructor.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#inner_product-instance_method" title="#inner_product (instance method)">#<strong>inner_product</strong>(a_vector, b_vector)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Find+the+inner+product+of+two+NVectors.">Find the inner product of two NVectors.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#inner_product_with-instance_method" title="#inner_product_with (instance method)">#<strong>inner_product_with</strong>(a_vector)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Find+the+inner+product+of+this+vector+with+a+given+one.">Find the inner product of this vector with a given one.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#outer_product-instance_method" title="#outer_product (instance method)">#<strong>outer_product</strong>(a_vector, b_vector)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Find+the+outer+product+of+two+NVectors.">Find the outer product of two NVectors.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scale_by-instance_method" title="#scale_by (instance method)">#<strong>scale_by</strong>(factor)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Increase+each+element+of+the+vector+by+a+scaler+value++++++++-3D-3D+Parameters+factor+-3A+scaler+value+to+scale+-28multiply-29+vector+by.">Increase each element of the vector by a scaler value        == Parameters <code>factor</code> : scaler value to scale (multiply) vector by.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subtract-instance_method" title="#subtract (instance method)">#<strong>subtract</strong>(a_vector)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Subtract+a+given+vector+to+this+vector++++++++-3D-3D+Parameters+a_vector+-3A+Another+NVector+instance+to+subtract+from+this+instance.">Subtract a given vector to this vector        == Parameters <code>a_vector</code> : Another NVector instance to subtract from this instance.</h6>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_string-instance_method" title="#to_string (instance method)">#<strong>to_string</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<h6 id="label-Returns+vector+as+printable+string.">Returns vector as printable string.</h6>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(size, initial_data = nil)  &#x21d2; <tt><span class='object_link'><a href="" title="NVector (class)">NVector</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Constructor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_size'>size</span><span class='comma'>,</span> <span class='id identifier rubyid_initial_data'>initial_data</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_initial_data'>initial_data</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_size'>size</span><span class='period'>.</span><span class='id identifier rubyid_times'>times</span> <span class='lbrace'>{</span><span class='kw'>self</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span><span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Initial Data size is smaller than NVector size</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_initial_data'>initial_data</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_size'>size</span>
+    <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_size'>size</span>
+      <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_initial_data'>initial_data</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add-instance_method">
+  
+    #<strong>add</strong>(a_vector)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Add a given vector to this vector<br> NOTE: if the given vector is larger
+than this one some of it&#39;s data will be dropped. If it is smaller only
+the elements of the given vector will be added  to this vector. <br> e.g.
+[0,1,3] + [1,2,3,4] = [1,3,6,4]</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>a_vector</code> : Another NVector instance to add to this instance</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>None; New internal state of this object is updated</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+124
+125
+126
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 124</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='rparen'>)</span> 
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span> <span class='comment'>#-- truncate some given data
+</span>    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span> <span class='comment'>#-- given vector is same or smaller than this object&#39;s vector
+</span>    <span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='op'>+=</span> <span class='id identifier rubyid_value'>value</span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="inner_product-instance_method">
+  
+    #<strong>inner_product</strong>(a_vector, b_vector)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Find the inner product of two NVectors</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>a_vector</code> : First NVector instance<br> <code>b_vector</code> :
+Second NVector instance</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>Inner product as an integer</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 85</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_inner_product'>inner_product</span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='comma'>,</span> <span class='id identifier rubyid_b_vector'>b_vector</span><span class='rparen'>)</span> 
+  <span class='id identifier rubyid_ip'>ip</span> <span class='op'>=</span> <span class='float'>0.0</span><span class='semicolon'>;</span>
+
+  <span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='id identifier rubyid_b_vector'>b_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_times'>times</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_a_vector'>a_vector</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&lt;</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='id identifier rubyid_ip'>ip</span> <span class='op'>+=</span> <span class='id identifier rubyid_value'>value</span> <span class='op'>*</span> <span class='id identifier rubyid_b_vector'>b_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_ip'>ip</span><span class='semicolon'>;</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="inner_product_with-instance_method">
+  
+    #<strong>inner_product_with</strong>(a_vector)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Find the inner product of this vector with a given one</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>a_vector</code> : Another NVector instance to get dot product with</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>Inner product as an integer</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+66
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 66</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_inner_product_with'>inner_product_with</span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='rparen'>)</span> 
+  <span class='id identifier rubyid_ip'>ip</span> <span class='op'>=</span> <span class='float'>0.0</span><span class='semicolon'>;</span>
+
+  <span class='lparen'>(</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>-</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_times'>times</span> <span class='lbrace'>{</span> <span class='id identifier rubyid_a_vector'>a_vector</span> <span class='op'>&lt;&lt;</span> <span class='float'>0.0</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&lt;</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='id identifier rubyid_ip'>ip</span> <span class='op'>+=</span> <span class='id identifier rubyid_value'>value</span> <span class='op'>*</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+  <span class='kw'>return</span> <span class='id identifier rubyid_ip'>ip</span><span class='semicolon'>;</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="outer_product-instance_method">
+  
+    #<strong>outer_product</strong>(a_vector, b_vector)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Find the outer product of two NVectors</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>a_vector</code> : First NVector instance<br> <code>b_vector</code> :
+Second NVector instance</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>Outer product as a new NVector instance</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+104
+105
+106
+107
+108
+109
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 104</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_outer_product'>outer_product</span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='comma'>,</span> <span class='id identifier rubyid_b_vector'>b_vector</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_result'>result</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="" title="NVector (class)">NVector</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="NVector#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span>
+  <span class='kw'>for</span> <span class='id identifier rubyid_i'>i</span> <span class='kw'>in</span> <span class='int'>0</span><span class='op'>...</span><span class='id identifier rubyid_result'>result</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span>
+    <span class='id identifier rubyid_result'>result</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span> <span class='op'>*</span> <span class='id identifier rubyid_b_vector'>b_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_i'>i</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_result'>result</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scale_by-instance_method">
+  
+    #<strong>scale_by</strong>(factor)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Increase each element of the vector by a scaler value</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>factor</code> : scaler value to scale (multiply) vector by</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>None; New internal state of this object is updated</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 158</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_scale_by'>scale_by</span><span class='lparen'>(</span><span class='id identifier rubyid_factor'>factor</span><span class='rparen'>)</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span> <span class='op'>*</span> <span class='id identifier rubyid_factor'>factor</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="subtract-instance_method">
+  
+    #<strong>subtract</strong>(a_vector)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Subtract a given vector to this vector</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p><code>a_vector</code> : Another NVector instance to subtract from this
+instance</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>None; New internal state of this object is updated</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142
+143
+144
+145
+146
+147</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 141</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subtract'>subtract</span><span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='rparen'>)</span> 
+  <span class='kw'>if</span> <span class='lparen'>(</span><span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span> <span class='op'>&gt;</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_length'>length</span><span class='rparen'>)</span> <span class='comment'>#-- truncate some given data
+</span>    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='op'>-=</span> <span class='id identifier rubyid_a_vector'>a_vector</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span> <span class='comment'>#-- given vector is same or smaller than this object&#39;s vector
+</span>    <span class='id identifier rubyid_a_vector'>a_vector</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_index'>index</span><span class='op'>|</span> <span class='kw'>self</span><span class='lbracket'>[</span><span class='id identifier rubyid_index'>index</span><span class='rbracket'>]</span> <span class='op'>-=</span> <span class='id identifier rubyid_value'>value</span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_string-instance_method">
+  
+    #<strong>to_string</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<h6 id="label-"></h6>
+
+<p>Returns vector as printable string</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+
+<p>none</p>
+
+<h2 id="label-Returns">Returns</h2>
+
+<p>Vector as a string</p>
+
+<h6 id="label-"></h6>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/vector_math.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_string'>to_string</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_str'>str</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>[</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_v'>v</span><span class='op'>|</span> <span class='id identifier rubyid_str'>str</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_v'>v</span><span class='embexpr_end'>}</span><span class='tstring_content'>, </span><span class='tstring_end'>&quot;</span></span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_str'>str</span> <span class='op'>=</span> <span class='id identifier rubyid_str'>str</span><span class='period'>.</span><span class='id identifier rubyid_chomp'>chomp</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>, </span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_str'>str</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>]</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_str'>str</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sun Jun 18 14:52:54 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.4.1).
+</div>
+
+    </div>
+  </body>
+</html>

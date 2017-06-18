@@ -1,0 +1,4 @@
+build_gem=Build Gem
+default=
+gen_doc=Generate HTML documentation with rdoc
+test=Run Unit Test
