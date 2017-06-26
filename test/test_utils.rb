@@ -7,7 +7,7 @@ class TestUtils < Test::Unit::TestCase
     c_method = caller_locations(1,1)[0].label.gsub("test_","")
     banner = ""
     str = "Testing #{c_name}::#{c_method}"
-    str.length.times { banner += "☯"}
+    str.length.times { banner += "="}
     puts banner
     puts str
     puts banner
